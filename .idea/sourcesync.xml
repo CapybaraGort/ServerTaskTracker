@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SourceSyncRemoteConfigurationsService"><![CDATA[{
+  "connections": [
+    {
+      "type": "ssh_configuration",
+      "name": "Server",
+      "hostname": "94.228.165.130",
+      "username": "root",
+      "remote_workspace_path": "/root"
+    }
+  ],
+  "mainConnection": "Server"
+}]]></component>
+</project>

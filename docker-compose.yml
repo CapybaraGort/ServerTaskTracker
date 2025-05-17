@@ -1,0 +1,21 @@
+services:
+  api:
+    container_name: api-tasktracker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    restart: always
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-task-tracker
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - api
